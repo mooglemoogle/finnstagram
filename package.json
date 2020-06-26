@@ -8,16 +8,29 @@
     "test": "jest"
   },
   "dependencies": {
+    "@emotion/core": "^11.0.0-next.10",
+    "@emotion/native": "^11.0.0-next.12",
+    "@emotion/react": "^11.0.0-next.10",
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@fortawesome/free-regular-svg-icons": "^5.13.0",
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "@fortawesome/react-native-fontawesome": "^0.2.5",
     "expo": "~37.0.3",
+    "expo-blur": "^8.1.0",
     "expo-updates": "~0.1.0",
+    "prop-types": "^15.7.2",
     "react": "~16.9.0",
     "react-dom": "~16.9.0",
     "react-native": "~0.61.5",
     "react-native-gesture-handler": "~1.6.0",
+    "react-native-iphone-x-helper": "^1.2.1",
     "react-native-reanimated": "~1.7.0",
     "react-native-screens": "~2.2.0",
+    "react-native-svg": "^12.1.0",
     "react-native-unimodules": "~0.9.0",
-    "react-native-web": "~0.11.7"
+    "react-native-web": "~0.11.7",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5"
   },
   "devDependencies": {
     "@babel/core": "~7.9.0",

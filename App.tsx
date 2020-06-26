@@ -1,19 +1,25 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { FC } from 'react';
+import { View, StatusBar, ImageURISource, ScrollView, Dimensions } from 'react-native';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-    </View>
-  );
-}
+import { Post } from './components/post/post';
+import { Header } from './components/header/header';
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+const App: FC = () => {
+    const img: ImageURISource = {uri: 'http://engagement.abysmalsoft.org.s3.amazonaws.com/Engagement%20Photo%203.jpg'}
+
+    return (
+        <View >
+            <StatusBar barStyle={'dark-content'} />
+            <Header />
+            <ScrollView style={{paddingTop: 90, paddingBottom: 90}} showsVerticalScrollIndicator={false}>
+                <Post image={img} />
+                <Post image={img} />
+                <Post image={img} />
+                <Post image={img} />
+                <Post image={img} />
+            </ScrollView>
+        </View>
+    );
+};
+
+export default App;
