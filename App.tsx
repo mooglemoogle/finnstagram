@@ -18,7 +18,7 @@ const App: FC = () => {
 
   return (
     <View>
-      <StatusBar barStyle={"dark-content"} />
+      <StatusBar barStyle={"dark-content"} backgroundColor={'#ffffff55'} translucent={true}/>
       <Header />
       <ScrollView
         style={{ paddingTop: 90}}

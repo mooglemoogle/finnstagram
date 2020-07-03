@@ -29,7 +29,7 @@ const HeaderBody = styled(BlurView)<{ top: number }>`
   display: flex;
   flex-direction: row;
   align-items: center;
-  elevation: 100;
+  elevation: 1;
 `;
 
 const PlusButton = styled(View)`
