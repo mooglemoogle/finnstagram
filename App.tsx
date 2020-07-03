@@ -21,7 +21,7 @@ const App: FC = () => {
       <StatusBar barStyle={"dark-content"} />
       <Header />
       <ScrollView
-        style={{ paddingTop: 90 }}
+        style={{ paddingTop: 90}}
         showsVerticalScrollIndicator={false}
       >
         <Post image={img} />
