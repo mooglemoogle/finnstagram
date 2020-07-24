@@ -8,15 +8,12 @@ import { Post } from '../../post/post';
 import { Header } from '../../header/header';
 
 export const Feed: FC = () => {
-    const img: ImageURISource = {
-        uri: 'http://engagement.abysmalsoft.org.s3.amazonaws.com/Engagement%20Photo%203.jpg',
-    };
-
     const dispatch = useDispatch();
+
     useEffect(() => {
         dispatch(fetchCurrentUser());
         dispatch(fetchPosts());
-    }, []);
+    }, [dispatch]);
 
     const postMap = useSelector(getPosts);
     const posts = postMap ? Array.from(postMap.values()) : [];
