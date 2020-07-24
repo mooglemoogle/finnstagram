@@ -13,9 +13,7 @@ export const Header: FC = () => {
                 <FontAwesomeIcon size={25} icon={faPlus} />
             </PlusButton>
             <Title>
-                <Text style={{ fontSize: 30, textAlign: 'center' }}>
-                    Finnstagram
-                </Text>
+                <Text style={{ fontSize: 30, textAlign: 'center' }}>Finnstagram</Text>
             </Title>
             <Avi></Avi>
         </HeaderBody>
@@ -32,7 +30,7 @@ const HeaderBody = styled(BlurView)<{ top: number }>`
     flex-direction: row;
     align-items: center;
     z-index: 100;
-    elevation: 100;
+    elevation: 1;
 `;
 
 const PlusButton = styled(View)`

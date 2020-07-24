@@ -23,7 +23,7 @@ export const Feed: FC = () => {
 
     return (
         <View>
-            <StatusBar barStyle={'dark-content'} />
+            <StatusBar barStyle={'dark-content'} backgroundColor={'#ffffff55'} translucent={true} />
             <Header />
             <ScrollView style={{ paddingTop: 90 }} showsVerticalScrollIndicator={false}>
                 {posts.map(post => (
