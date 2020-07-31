@@ -15,7 +15,20 @@ export const getPosts = (): Promise<Post[]> => {
                     },
                 ],
                 caption: 'Test Post 1',
-                comments: [],
+                comments: [
+                    {
+                        userId: '1',
+                        id: '1',
+                        postId: '1',
+                        body: 'First!'
+                    },
+                    {
+                        userId: '2',
+                        id: '2',
+                        postId: '1',
+                        body: 'What a great picture! And great word wrapping wrapping wrapping wrapping wrapping.'
+                    }
+                ],
                 likes: 21,
             },
             {
@@ -29,7 +42,14 @@ export const getPosts = (): Promise<Post[]> => {
                     },
                 ],
                 caption: 'Test Post 2',
-                comments: [],
+                comments: [
+                    {
+                        userId: '2',
+                        id: '1',
+                        postId: '2',
+                        body: "Too slow, sucka'!"
+                    }
+                ],
                 likes: 63,
             },
         ])

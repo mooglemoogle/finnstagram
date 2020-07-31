@@ -4,7 +4,9 @@ import styled from '@emotion/native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 // import { faHeart as fasHeart } from '@fortawesome/free-solid-svg-icons';
 import { faHeart as farHeart } from '@fortawesome/free-regular-svg-icons';
-import { Post as PostType } from '../../redux/posts/types';
+import { Post as PostType} from '../../redux/posts/types';
+
+import { Comment } from '../comment/comment';
 
 // export interface PostProps {
 //     image: ImageSourcePropType;
@@ -21,6 +23,12 @@ export const Post: FC<PostType> = props => {
     const postHeight = ratio * imageDimensions.y;
 
     const imageSource: ImageURISource = { uri: props.mediaItems[0].uri };
+
+    // const postMap = useSelector(getPosts);
+    // const posts = postMap ? Array.from(postMap.values()) : [];
+
+    const comments = props.comments
+
     return (
         <PostBody>
             <PostHeader>
@@ -29,6 +37,9 @@ export const Post: FC<PostType> = props => {
             <PostImage source={imageSource} style={{ width: windowWidth, height: postHeight }} />
             <PostControls>
                 <FontAwesomeIcon size={20} icon={farHeart} />
+                {comments.map(comment => (
+                    <Comment key={comment.id} {...comment} />
+                ))}
             </PostControls>
         </PostBody>
     );
