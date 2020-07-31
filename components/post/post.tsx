@@ -24,9 +24,6 @@ export const Post: FC<PostType> = props => {
 
     const imageSource: ImageURISource = { uri: props.mediaItems[0].uri };
 
-    // const postMap = useSelector(getPosts);
-    // const posts = postMap ? Array.from(postMap.values()) : [];
-
     const comments = props.comments
 
     return (
@@ -37,10 +34,10 @@ export const Post: FC<PostType> = props => {
             <PostImage source={imageSource} style={{ width: windowWidth, height: postHeight }} />
             <PostControls>
                 <FontAwesomeIcon size={20} icon={farHeart} />
-                {comments.map(comment => (
+            </PostControls>
+            {comments.map(comment => (
                     <Comment key={comment.id} {...comment} />
                 ))}
-            </PostControls>
         </PostBody>
     );
 };
