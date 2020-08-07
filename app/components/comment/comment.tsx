@@ -7,7 +7,7 @@ export const Comment: FC<CommentType> = props => {
 
     return (
         <CommentBody>
-            <Text style={{fontWeight: 'bold'}}>{props.userId} <Text style={{fontWeight: 'normal'}}>{props.body}</Text></Text>
+            <Text style={{fontWeight: 'bold'}}>{props.userId} <Text style={{fontWeight: 'normal', flexWrap: 'wrap'}}>{props.body}</Text></Text>
         </CommentBody>
     );
 };
