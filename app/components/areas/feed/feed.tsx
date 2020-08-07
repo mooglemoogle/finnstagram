@@ -1,5 +1,5 @@
 import React, { FC, useEffect } from 'react';
-import { View, StatusBar, ImageURISource, ScrollView } from 'react-native';
+import { View, StatusBar, ScrollView } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchCurrentUser } from '../../../redux/currentUser';
 import { fetchPosts, getPosts } from '../../../redux/posts';
