@@ -1,15 +1,20 @@
 {
-	"version": "2.0.0",
-	"tasks": [
-		{
-			"type": "npm",
-			"script": "start",
-			"path": "app/",
-			"problemMatcher": [
-				"$tsc"
-			],
-			"label": "npm: start - app",
-			"detail": "expo start"
-		}
-	]
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "npm",
+            "script": "start",
+            "path": "app/",
+            "problemMatcher": ["$tsc"],
+            "label": "npm: start - app",
+            "detail": "expo start"
+        },
+        {
+            "type": "cargo",
+            "subcommand": "build",
+            "problemMatcher": ["$rustc"],
+            "group": "build",
+            "label": "Rust: cargo build - server"
+        }
+    ]
 }
