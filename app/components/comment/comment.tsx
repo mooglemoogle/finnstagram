@@ -1,21 +1,21 @@
 import React, { FC } from 'react';
 import { View, Image, Text, Dimensions } from 'react-native';
 import styled from '@emotion/native';
-import {Comment as CommentType} from '../../redux/posts/types';
+import { Comment as CommentType } from '../../redux/posts/types';
 
 export const Comment: FC<CommentType> = props => {
-
     return (
         <CommentBody>
-            <Text style={{fontWeight: 'bold'}}>{props.userId} <Text style={{fontWeight: 'normal', flexWrap: 'wrap'}}>{props.body}</Text></Text>
+            <Text style={{ maxWidth: '100%' }}>
+                <Text style={{ fontWeight: 'bold' }}>{props.userId}</Text> {props.body}
+            </Text>
         </CommentBody>
     );
 };
 
 const CommentBody = styled(View)`
-    width: 95%;
-    padding-left: 15%;
-    padding-bottom: 1%
-`
+    width: 100%;
+    padding: 5px;
+`;
 
 Comment.displayName = 'Comment';

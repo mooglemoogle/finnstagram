@@ -35,9 +35,11 @@ export const Post: FC<PostType> = props => {
             <PostControls>
                 <FontAwesomeIcon size={20} icon={farHeart} />
             </PostControls>
-            {comments.map(comment => (
-                <Comment key={comment.id} {...comment} />
-            ))}
+            <CommentContainer>
+                {comments.map(comment => (
+                    <Comment key={comment.id} {...comment} />
+                ))}
+            </CommentContainer>
         </PostBody>
     );
 };
@@ -62,6 +64,13 @@ const PostControls = styled(View)`
     display: flex;
     flex-direction: row;
     padding: 10px 20px;
+`;
+
+const CommentContainer = styled(View)`
+    width: 100%;
+    padding-left: 15%;
+    display: flex;
+    flex-direction: column;
 `;
 
 Post.displayName = 'Post';
