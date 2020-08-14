@@ -24,6 +24,7 @@ export interface MediaItem {
     id: string;
     postId: string;
     uri: string;
+    liveUri?: string;
 }
 
 export interface PostsState {
