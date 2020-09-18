@@ -10,7 +10,7 @@
             "name": "Debug",
             "program": "${workspaceFolder}/server/target/debug/finnstagram-server",
             "args": [],
-            "cwd": "${workspaceFolder}",
+            "cwd": "${workspaceFolder}/server",
             "preLaunchTask": "Rust: cargo build - server"
         }
     ]
