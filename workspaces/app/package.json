@@ -1,4 +1,6 @@
 {
+    "name": "finnstagram-app",
+    "version": "0.1.0",
     "main": "index.js",
     "scripts": {
         "android": "react-native run-android",
@@ -55,6 +57,5 @@
         "singleQuote": true,
         "arrowParens": "avoid",
         "printWidth": 120
-    },
-    "private": true
+    }
 }
