@@ -1,4 +1,5 @@
 import { Post } from '@finn/models/Post';
+import { commentMap } from '@finn/mocks/comments';
 
 const post: Post = {
     id: '1',
@@ -15,26 +16,7 @@ const post: Post = {
             uri: 'http://engagement.abysmalsoft.org.s3.amazonaws.com/Engagement%20Photo%203.jpg',
         },
     ],
-    comments: [
-        {
-            userId: 'Gordon',
-            id: '1',
-            postId: '1',
-            createdDate: '2020-09-10T00:31:32.123Z',
-            body: 'Ooga Booga!',
-            likes: 10,
-            liked: false,
-        },
-        {
-            userId: 'Franco',
-            id: '2',
-            postId: '1',
-            createdDate: '2020-09-10T00:31:32.123Z',
-            body: 'What a great picture! And great word wrapping wrapping wrapping wrapping wrapping.',
-            likes: 14,
-            liked: false,
-        },
-    ],
+    topComments: [commentMap['1'], commentMap['2']],
 };
 
 export default post;

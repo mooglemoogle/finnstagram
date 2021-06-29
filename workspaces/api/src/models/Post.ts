@@ -8,6 +8,6 @@ export interface Post {
     caption: string;
     likes: number;
     liked: boolean;
-    comments: Comment[];
+    topComments: Comment[];
     media: MediaItem[];
 }
