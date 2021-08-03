@@ -1,0 +1,21 @@
+{
+  "name": "finnstagram",
+  "displayName": "finnstagram",
+  "expo": {
+    "name": "Finnstagram",
+    "slug": "finnstagram",
+    "version": "1.0.0",
+    "ios": {
+      "bundleIdentifier": "org.abysmalsoft.finnstagram",
+      "buildNumber": "1.0.0"
+    },
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
