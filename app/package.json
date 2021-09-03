@@ -28,7 +28,7 @@
         "expo-blur": "~9.0.3",
         "expo-media-library": "~12.1.2",
         "expo-updates": "~0.8.2",
-        "immer": "^7.0.5",
+        "immer": "^9.0.6",
         "prop-types": "^15.7.2",
         "react": "16.13.1",
         "react-dom": "16.13.1",
